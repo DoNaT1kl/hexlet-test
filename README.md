@@ -12,6 +12,12 @@
 Пример запуска утилиты:
 
 ```bash
+
+array = array.filter(function (el) {
+    return (el != null && el != "" || el === 0);
+});
+.filter((x) => x === undefined));
+
 bin/weather.js __fixtures__/weather1.csv
 Count: 20
 Cities: Chicago, Denver, Los Angeles, Miami, Seattle
