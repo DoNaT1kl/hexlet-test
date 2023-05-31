@@ -27,7 +27,7 @@ export default function solution(content){
     const temp = _.mean(rows.map((row) => (Number(row[1]))));
     return { temp, cityName };
   });
-  // Если вернуть функцию выше в виде массива
+  // Если вернуть функцию выше в виде массива 
   // const hottestCity = _.max(meanTemp, (row) => (row[0]));
   // console.log(`HottestCity: ${hottestCity[1]}`);
   const hottestCity = _.maxBy(meanTemp, (row) => (row.temp)).cityName;
